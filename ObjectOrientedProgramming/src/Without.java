@@ -30,6 +30,7 @@ public class Without {
         System.out.println("Triangle Y area: " + areaY);
 
         if (areaX > areaY) System.out.println("Larger area: X");
-        else System.out.println("Smaller area: Y");
+        else if (areaY > areaX) System.out.println("Larger area: Y");
+        else System.out.println("Same area");
     }
 }
