@@ -22,13 +22,8 @@ public class With {
         y.b = sc.nextDouble();
         y.c = sc.nextDouble();
 
-        System.out.println("A " + x.a + " B " + x.b + " C " + x.c);
-
-        double p = (x.a + x.b + x.c) / 2;
-        double areaX = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
-
-        p = (y.a + y.b + y.c) / 2;
-        double areaY = Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
+        double areaX = x.calcArea();
+        double areaY = y.calcArea();
 
         System.out.println("Triangle X area: " + areaX);
         System.out.println("Triangle Y area: " + areaY);
@@ -44,4 +39,11 @@ class Triangle {
     public double a;
     public double b;
     public double c;
+
+    public double calcArea() {
+
+        double p = (a + b + c) / 2;
+
+        return Math.sqrt(p * (p - a) * (p - b) * (p - c));
+    }
 }
