@@ -4,11 +4,12 @@ public class Account {
     private String holderName;
     private double balance;
 
-    public Account(int id, String holderName, double balance) {
+    public Account(int id, String holderName, double initialDeposit) {
 
         this.id = id;
         this.holderName = holderName;
-        this.balance = balance;
+
+        makeDeposit(initialDeposit);
     }
 
     public Account(int id, String holderName) {
