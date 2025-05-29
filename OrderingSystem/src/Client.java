@@ -1,6 +1,9 @@
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Client {
+
+    public static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
     private String name;
     private String email;
@@ -27,6 +30,6 @@ public class Client {
     //General methods
     public String toString() {
 
-        return "Name: " + name + ", Email: " + email + ", Birth Date: " + birthDate;
+        return getName() + " (" + formatter.format(getBirthDate()) + ") - " + getEmail();
     }
 }
