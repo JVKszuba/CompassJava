@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/BankSystem/BankSystem.iml" filepath="$PROJECT_DIR$/BankSystem/BankSystem.iml" />
       <module fileurl="file://$PROJECT_DIR$/CompanySystem/CompanySystem.iml" filepath="$PROJECT_DIR$/CompanySystem/CompanySystem.iml" />
       <module fileurl="file://$PROJECT_DIR$/CompassJava.iml" filepath="$PROJECT_DIR$/CompassJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InheritancePolymorphism/InheritancePolymorphism.iml" filepath="$PROJECT_DIR$/InheritancePolymorphism/InheritancePolymorphism.iml" />
       <module fileurl="file://$PROJECT_DIR$/Introduction/Introduction.iml" filepath="$PROJECT_DIR$/Introduction/Introduction.iml" />
       <module fileurl="file://$PROJECT_DIR$/ObjectOrientedProgramming/ObjectOrientedProgramming.iml" filepath="$PROJECT_DIR$/ObjectOrientedProgramming/ObjectOrientedProgramming.iml" />
       <module fileurl="file://$PROJECT_DIR$/OrderingSystem/OrderingSystem.iml" filepath="$PROJECT_DIR$/OrderingSystem/OrderingSystem.iml" />
