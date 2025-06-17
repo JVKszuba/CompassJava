@@ -3,7 +3,9 @@ package com.compass.springboot.entities;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name = "tb_category")
@@ -14,6 +16,9 @@ public class Category implements Serializable {
     private Long id;
     private String name;
 
+    @Transient
+    private Set<Product> products = new HashSet<>();
+
     public Category() {}
     public Category(Long id, String name) {
 
@@ -23,6 +28,7 @@ public class Category implements Serializable {
 
     public Long getId() {return id;}
     public String getName() {return name;}
+    public Set<Product> getProducts() {return products;}
 
     public void setId(Long id) {this.id = id;}
     public void setName(String name) {this.name = name;}
