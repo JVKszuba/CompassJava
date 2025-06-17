@@ -3,6 +3,8 @@ package com.compass.springboot.entities;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -16,6 +18,9 @@ public class User implements Serializable {
     private String email;
     private String cellphone;
     private String password;
+
+    @OneToMany(mappedBy = "client")
+    private List<Order> orders = new ArrayList<>();
 
     public User() {}
     public User(Long id, String name, String email, String cellphone, String password) {
@@ -32,6 +37,7 @@ public class User implements Serializable {
     public String getEmail() {return email;}
     public String getCellphone() {return cellphone;}
     public String getPassword() {return password;}
+    public List<Order> getOrders() {return orders;}
 
     public void setId(Long id) {this.id = id;}
     public void setName(String name) {this.name = name;}
